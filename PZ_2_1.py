@@ -5,7 +5,6 @@
 
 
 try:
-    while True:
         V= int (input("скорость "))
         U=int (input("течение "))
         T1=int (input("время озеро "))
@@ -16,5 +15,5 @@ try:
             print(S1,S2)
         else:
             print("Неверные значения")
-except:
-    print("Ошибка")
+except ValueError:
+    print("Ошибка, нужно целое число")
