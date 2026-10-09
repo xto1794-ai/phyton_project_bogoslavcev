@@ -9,11 +9,13 @@ try:
         U=int (input("течение "))
         T1=int (input("время озеро "))
         T2=int (input("время река "))
-        if U<V:
-            S1=T1*V
-            S2=T2*(V-U)
-            print(S1,S2)
+        if U < V:
+            S1 = T1 * V
+            S2 = T2 * (V - U)
+            print(S1, S2)
         else:
-            print("Неверные значения")
+            print("Неверные значения, нужно U<V")
 except ValueError:
-    print("Ошибка, нужно целое число")
+        print("Ошибка, нужно целое число")
+
+
