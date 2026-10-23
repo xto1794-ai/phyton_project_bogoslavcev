@@ -6,7 +6,38 @@
 "скидка составит 5%. Составить программу определяющую размер скидки в"
 "зависимости от потраченной суммы."
 
+while True:
+    try:
+       c=int(input())
+       break
+    except ValueError:
+        print("нужно целое число")
 
+if c<500:
+    s=2
+    b=c*s//100
+    h=c-b
+    print(s,b,h)
+if 500<=c<1000:
+    s=3
+    b = c * s // 100
+    h=c-b
+    print(s,b,h)
+if 1000<=c<1500:
+    s=4
+    b = c * s // 100
+    h=c-b
+    print(s,b,h)
+if 1500<=c<2000:
+    s=5
+    b = c * s // 100
+    h=c-b
+    print(s,b,h)
+if 2000<=c:
+    s=5
+    b = c * s // 100
+    h=c-b
+    print(s,b,h)
 
 
 
