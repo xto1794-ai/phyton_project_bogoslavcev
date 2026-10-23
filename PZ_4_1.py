@@ -7,17 +7,25 @@
 
 
 "1."
+i=0
 while True:
     try:
      k=int(input())
      break
     except ValueError:
         print("нужно целое число")
-for i in range(1, 11):
-    print(i * k)
+while True:
+    i+1
+    q=k * i
+    if i==10:
+        break
+    else:
+        print()
+print(q)
 
 
 "2."
+
 while True:
     try:
      h=int(input())
