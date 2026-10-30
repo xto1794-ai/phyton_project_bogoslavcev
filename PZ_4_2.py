@@ -3,30 +3,10 @@
 "вывести TRUE, если нет — вывести FALSE."
 
 
-<<<<<<< HEAD:PZ_4_1.py
-
-"1."
-i=0
-while True:
-    try:
-     k=int(input())
-     break
-    except ValueError:
-        print("нужно целое число")
-while True:
-    i+1
-    q=k * i
-    if i==10:
-        break
-    else:
-        print()
-print(q)
 
 
-"2."
 
-=======
->>>>>>> f19f221 (4):PZ/PZ_4_2.py
+
 while True:
     try:
      h=int(input())
