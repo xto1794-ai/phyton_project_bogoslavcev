@@ -12,16 +12,16 @@ while True:
     except ValueError:
         print("Нужно целое число")
 
-    has_two = False
+    d = False
 
     while N > 0:
         if N % 10 == 2:
             print(N)
-            has_two = True
+            d = True
             break
         N //= 10
 
-    if has_two:
+    if d:
         print("TRUE")
     else:
         print("FALSE")
