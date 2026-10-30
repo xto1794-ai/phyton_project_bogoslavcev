@@ -5,26 +5,23 @@
 
 
 
-
-
 while True:
     try:
-     h=int(input())
-     break
+        N = int (input())
+        break
     except ValueError:
-        print("нужно целое число")
+        print("Нужно целое число")
 
-p=h//100
-print(p)
-j=(h%100)//10
-print(j)
-i=(h%100)%10
-print(i)
-if p==2:
-    print("TRUE")
-elif j==2:
-    print("TRUE")
-elif i==2:
-    print("TRUE")
-else:
-    print("FALSE")
+    has_two = False
+
+    while N > 0:
+        if N % 10 == 2:
+            print(N)
+            has_two = True
+            break
+        N //= 10
+
+    if has_two:
+        print("TRUE")
+    else:
+        print("FALSE")
