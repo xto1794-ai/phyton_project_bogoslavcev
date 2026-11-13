@@ -1,8 +1,10 @@
 'Вариант 3'
 '1. Составить функцию, которая выполнит суммирования числового ряда.'
-n= (3,4,5)
-def sum_series(n):
-    return sum(n)
-print(n)
+
+s=0
+while True:
+    n=int (input(""))
+    f=n
+    l= f+n
 
 
