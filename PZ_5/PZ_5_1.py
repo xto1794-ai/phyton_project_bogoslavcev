@@ -1,15 +1,19 @@
 'Вариант 3'
 '1. Составить функцию, которая выполнит суммирования числового ряда.'
-l=0
 
-while True:
-    k=int(input("введите число"))
-    l += k
-    print(l)
+
+def p():
+    l = 0
     print("чтобы завершить введите 0")
-    u = int(input())
-    if u==0:
-        break
+    while True:
+        a = int(input("введите число"))
+        if a == 0:
+            break
+        l += a
+    print(l)
+        # u = int(input())
 
 
+
+p()
 
