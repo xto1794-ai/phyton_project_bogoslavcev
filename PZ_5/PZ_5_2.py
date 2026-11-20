@@ -2,16 +2,14 @@
 'равностороннего треугольника его периметр P = 3*a и площадь S = a2 √3/4. С'
 'помощью этой функции найти периметры и площади трех равносторонних'
 'треугольников с данными сторонами.'
-import math
 
+import math
 def TrianglePS(a):
     P = 3 * a
-    S = (a ** 2) * math.sqrt(3) / 4
+    S = (a**2 * math.sqrt(3)) / 4
     return P, S
 
-# Данные стороны трех треугольников
-a=int(input())
-
-for side in a:
-    p, s = TrianglePS(side)
-    print(f"Сторона a = {side}: Периметр P = {p:.2f}, Площадь S = {s:.2f}")
+for i in range(1, 4):
+    a = float(input())
+    P, S = TrianglePS(a)
+    print(P,S)
