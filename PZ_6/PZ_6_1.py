@@ -5,3 +5,9 @@
 a=int(input())
 d=int(input())
 y=[]
+j=1
+for i in range(10):
+    h=a + j*d
+    j+=1
+    y.append(h)
+print(y)
